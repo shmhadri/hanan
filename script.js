@@ -5,7 +5,7 @@
 // 1. CONFIGURATION BLOCK (Easily editable handles)
 const CONFIG = {
     whatsapp: "966500000000", // Replace with real number (e.g. 9665XXXXXXXX)
-    tiktok: "https://www.tiktok.com/@hanan_ugc",
+    tiktok: "https://www.tiktok.com/@lafat_makkah?_r=1&_t=ZS-98Xhkbvo3Zi",
     instagram: "https://instagram.com/hanan_ugc",
     telegram: "https://t.me/hanan_ugc",
     email: "contact@hananugc.com"
