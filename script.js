@@ -17,29 +17,30 @@ const PORTFOLIO_DATA = [
     {
         id: 1,
         type: 'video',
-        title: 'عناية بالبشرة - روتين الصباح بالمرطب العضوي ✨',
+        title: 'استعراض إبداعي احترافي لروتين العناية بالبشرة ✨',
         category: 'فيديو UGC ترويجي',
-        thumbnail: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80',
-        url: 'https://player.vimeo.com/external/430635417.sd.mp4?s=d4f1cd05a30fe86a1dfc79679c13b2d186c67ef5&profile_id=165&oauth2_token_id=57447761',
-        views: '14.8K',
+        thumbnail: 'videos/er.mp4',
+        poster: 'images/arencia-cleanser.jpg',
+        url: 'videos/er.mp4',
+        views: '24.5K',
         duration: '0:15'
     },
     {
         id: 2,
         type: 'video',
-        title: 'تجربة تحضير ومذاق قهوة مختصة باردة ☕',
-        category: 'تجربة وتقييم منتج',
-        thumbnail: 'https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&w=400&q=80',
-        url: 'https://player.vimeo.com/external/435674703.sd.mp4?s=7fdf27e08677c70c679237e19a489116e04d49a4&profile_id=165&oauth2_token_id=57447761',
+        title: 'عناية بالبشرة وتنظيف لطيف مع منتجات ARENCIA 🌿',
+        category: 'فيديو UGC ترويجي',
+        thumbnail: 'images/arencia-cleanser.jpg',
+        url: 'https://player.vimeo.com/external/430635417.sd.mp4?s=d4f1cd05a30fe86a1dfc79679c13b2d186c67ef5&profile_id=165&oauth2_token_id=57447761',
         views: '22.1K',
         duration: '0:20'
     },
     {
         id: 3,
         type: 'video',
-        title: 'عطر نسائي فخم - إبرام الزوايا والتفاصيل السينمائية 🖤',
+        title: 'تصوير تفصيلي لأرواج وبلاشر إيف سان لوران الفاخرة 💄',
         category: 'تصوير منتجات سينمائي',
-        thumbnail: 'https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=400&q=80',
+        thumbnail: 'images/ysl-makeup.jpg',
         url: 'https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c054ba208d9040a444402ebcfb6eb063&profile_id=139&oauth2_token_id=57447761',
         views: '18.9K',
         duration: '0:18'
@@ -47,9 +48,9 @@ const PORTFOLIO_DATA = [
     {
         id: 4,
         type: 'video',
-        title: 'مراجعة كريم تفتيح البشرة وملمسه الناعم 🌸',
+        title: 'تجربة ملمس ونعومة زبدة الجسم من MOREÓ 🌸',
         category: 'فيديو UGC مراجعة',
-        thumbnail: 'https://images.unsplash.com/photo-1608248597481-496100c80836?auto=format&fit=crop&w=400&q=80',
+        thumbnail: 'images/moreo-body-butter.jpg',
         url: 'https://player.vimeo.com/external/538569947.sd.mp4?s=2d87a747c34d3d526759c5d1b764d603a11dfb2c&profile_id=165&oauth2_token_id=57447761',
         views: '9.4K',
         duration: '0:25'
@@ -57,20 +58,20 @@ const PORTFOLIO_DATA = [
     {
         id: 5,
         type: 'video',
-        title: 'تجربة حية وتغطية لوجبات مطعم برجر جديد بجدة 🍔',
-        category: 'تغطية إعلانية ميدانية',
-        thumbnail: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80',
-        url: 'https://player.vimeo.com/external/482276535.sd.mp4?s=1df90432579dfd9fb721cc74fa1d5ee070cb13c3&profile_id=165&oauth2_token_id=57447761',
+        title: 'روتين الترطيب اليومي للشفاه باستعمال Dior Lip Glow 💋',
+        category: 'فيديو UGC تجربة وتقييم',
+        thumbnail: 'images/dior-lipglow.jpg',
+        url: 'videos/er.mp4',
         views: '34.2K',
         duration: '0:30'
     },
     {
         id: 6,
         type: 'video',
-        title: 'تنسيق ملابس وعبايات شتوية ناعمة مع المودل 🧥',
-        category: 'فيديو UGC أزياء',
-        thumbnail: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=400&q=80',
-        url: 'https://player.vimeo.com/external/409257635.sd.mp4?s=bc9e9de5e8a5dbcf5268c70bfdf65dfbc12cf4ad&profile_id=165&oauth2_token_id=57447761',
+        title: 'تقشير لطيف وتنعيم للبشرة بمنتج مقشر السكر METODOLOGIA ✨',
+        category: 'فيديو UGC روتين',
+        thumbnail: 'images/metodologia-scrub.jpg',
+        url: 'https://player.vimeo.com/external/430635417.sd.mp4?s=d4f1cd05a30fe86a1dfc79679c13b2d186c67ef5&profile_id=165&oauth2_token_id=57447761',
         views: '12.3K',
         duration: '0:12'
     },
@@ -234,10 +235,15 @@ function renderPortfolio(items) {
     grid.innerHTML = ''; // Clear existing layout
 
     items.forEach((item, index) => {
+        const isVideoThumbnail = item.thumbnail && item.thumbnail.endsWith('.mp4');
+        const mediaHtml = isVideoThumbnail
+            ? `<video class="portfolio-thumb" src="${item.thumbnail}" autoplay loop muted playsinline ${item.poster ? `poster="${item.poster}"` : ''}></video>`
+            : `<img class="portfolio-thumb" src="${item.thumbnail}" alt="${item.title}" loading="lazy">`;
+
         const itemHtml = `
             <div class="portfolio-item" data-type="${item.type}" onclick="openLightbox(${index})">
                 <div class="portfolio-thumbnail-wrap">
-                    <img class="portfolio-thumb" src="${item.thumbnail}" alt="${item.title}" loading="lazy">
+                    ${mediaHtml}
                     
                     <!-- Hover overlay details -->
                     <div class="portfolio-overlay">
