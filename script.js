@@ -77,20 +77,40 @@ const PORTFOLIO_DATA = [
     {
         id: 7,
         type: 'photo',
-        title: 'جلسة تصوير فوتوغرافي لمنتجات سبا العناية الطبيعية 🧼',
+        title: 'جلسة تصوير احترافية لمنتج زبدة الجسم MOREÓ 🌸',
         category: 'تصوير منتجات فوتوغرافي',
-        thumbnail: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=400&q=80',
-        url: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80',
+        thumbnail: 'images/moreo-body-butter.jpg',
+        url: 'images/moreo-body-butter.jpg',
         views: 'تصوير فوتوغرافي',
         duration: 'صورة بدقة عالية'
     },
     {
         id: 8,
         type: 'photo',
-        title: 'لقطة مقربة تفصيلية لزيوت الأركان العضوية للشعر 🌿',
+        title: 'تصوير تفصيلي لعلبة البلاشر وأرواج إيف سان لوران الفاخرة 💄',
         category: 'تصوير منتجات فوتوغرافي',
-        thumbnail: 'https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=400&q=80',
-        url: 'https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=80',
+        thumbnail: 'images/ysl-makeup.jpg',
+        url: 'images/ysl-makeup.jpg',
+        views: 'تصوير فوتوغرافي',
+        duration: 'صورة بدقة عالية'
+    },
+    {
+        id: 9,
+        type: 'photo',
+        title: 'لقطة مقربة تفصيلية لمقشر السكر العضوي METODOLOGIA 🍇',
+        category: 'تصوير منتجات فوتوغرافي',
+        thumbnail: 'images/metodologia-scrub.jpg',
+        url: 'images/metodologia-scrub.jpg',
+        views: 'تصوير فوتوغرافي',
+        duration: 'صورة بدقة عالية'
+    },
+    {
+        id: 10,
+        type: 'photo',
+        title: 'تصوير صندوق منتجات العناية بالبشرة العشبية من ARENCIA 🌿',
+        category: 'تصوير منتجات فوتوغرافي',
+        thumbnail: 'images/arencia-cleanser.jpg',
+        url: 'images/arencia-cleanser.jpg',
         views: 'تصوير فوتوغرافي',
         duration: 'صورة بدقة عالية'
     }
