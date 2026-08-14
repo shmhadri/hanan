@@ -4,7 +4,7 @@
 
 // 1. CONFIGURATION BLOCK (Easily editable handles)
 const CONFIG = {
-    whatsapp: "966500000000", // Replace with real number (e.g. 9665XXXXXXXX)
+    whatsapp: "966577973806", // Replace with real number (e.g. 9665XXXXXXXX)
     tiktok: "https://www.tiktok.com/@lafat_makkah?_r=1&_t=ZS-98Xhkbvo3Zi",
     instagram: "https://instagram.com/hanan_ugc",
     telegram: "https://t.me/hanan_ugc",
@@ -447,7 +447,7 @@ ${brief}
             toast.classList.remove('show');
             submitBtn.disabled = false;
             form.reset();
-            window.open(finalWhatsappUrl, '_blank');
+            window.location.href = finalWhatsappUrl;
         }, 2200);
     });
 }
