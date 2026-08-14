@@ -391,12 +391,11 @@ function setupCollaborationForm() {
 
         // 1. Get values
         const name = document.getElementById('clientName').value.trim();
-        const handle = document.getElementById('clientHandle').value.trim();
         const service = document.getElementById('serviceType').value;
         const brief = document.getElementById('projectBrief').value.trim();
 
         // 2. Validate input fields
-        if (!name || !handle || !service || !brief) {
+        if (!name || !service || !brief) {
             alert('يرجى ملء جميع الحقول المطلوبة بشكل صحيح.');
             return;
         }
@@ -424,7 +423,6 @@ function setupCollaborationForm() {
         const whatsappMsg = `*طلب تعاون جديد - Hanan UGC* 💼
 -----------------------------
 *الاسم/البراند:* ${name}
-*رابط الحساب:* ${handle}
 *نوع الخدمة:* ${serviceArabic}
 *تفاصيل المشروع:*
 ${brief}
