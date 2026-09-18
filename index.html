@@ -214,7 +214,7 @@
             <div class="section-header">
                 <span class="section-badge">معرض أعمالي التفاعلي</span>
                 <h2 class="section-title">شاهد <span>جودة أعمالي</span></h2>
-                <p class="section-desc">اضغط على أي عمل لتشغيله في عارض الفيديوهات التفاعلي وملاحظة جودة الإنتاج والأفكار الإبداعية.</p>
+                <p class="section-desc">تصفح أحدث فيديوهات UGC الاحترافية بتقنية التشغيل التلقائي المباشر، واضغط على أي فيديو لمشاهدته بالشاشة الكاملة مع الصوت وبأعلى دقة ✨</p>
             </div>
 
             <!-- Tabs Filters -->
@@ -460,6 +460,14 @@
     <div class="lightbox-modal" id="lightboxModal">
         <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="إغلاق"><i class="fas fa-times"></i></button>
         
+        <!-- Navigation Buttons -->
+        <button class="lightbox-nav-btn lightbox-prev-btn" id="lightboxPrevBtn" aria-label="السابق">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <button class="lightbox-nav-btn lightbox-next-btn" id="lightboxNextBtn" aria-label="التالي">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
         <div class="lightbox-wrapper">
             <!-- Video Player -->
             <video class="lightbox-video" id="lightboxVideo" controls autoplay playsinline loop></video>
@@ -469,8 +477,14 @@
             
             <!-- Caption Info Box -->
             <div class="lightbox-caption-box">
+                <div class="lightbox-caption-top">
+                    <span class="lightbox-caption-cat" id="lightboxCategory">تيك توك UGC</span>
+                    <span class="lightbox-caption-meta" id="lightboxMeta"><i class="far fa-eye"></i> <span id="lightboxViews"></span></span>
+                </div>
                 <div class="lightbox-caption-title" id="lightboxTitle">عنوان الفيديو الافتراضي</div>
-                <div class="lightbox-caption-cat" id="lightboxCategory">تيك توك UGC</div>
+                <a href="#collab" class="lightbox-order-btn" id="lightboxOrderBtn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> اطلب فيديو مثل هذا لبراندك
+                </a>
             </div>
         </div>
     </div>
